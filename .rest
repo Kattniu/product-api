@@ -1,0 +1,42 @@
+### GET all products - Obtener todos los contactos
+
+GET http://localhost:3000/api/products/
+Accept: application/json
+
+###
+
+### GET- Obtener un contacto por ID
+
+GET http://localhost:3000/products/{{id}}
+Accept: application/json
+
+###
+
+### POST a new product- Crear un nuevo producto (todos los campos requeridos)
+
+POST http://localhost:3000/api/products/
+Content-Type: application/json
+{
+"name": "Luxury",
+"price": 55,
+"description": "A luxurious scent for all genders"
+}
+
+###
+
+### PUT update a product- Actualizar un contacto existente (todos los campos requeridos)
+
+PUT http://localhost:3000/products/{{id}}
+Content-Type: application/json
+{
+"name": "Updated Name",
+"price": 60,
+"description": "Updated description"
+}
+
+###
+
+### DELETE a product- Eliminar un contacto
+
+DELETE http://localhost:3000/api/products/{{id}}
+Content-Type: application/json
